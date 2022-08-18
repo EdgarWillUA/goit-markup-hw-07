@@ -33,20 +33,29 @@
     color: #ffffff;
   }
   
-  .footer__email,
+  .footer__email {
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(255, 255, 255, 0.6);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+     
+    &:hover,
+    &:focus {
+      color: var(--hover-txt-color);
+    }
+  }
+  
   .footer__phone {
     font-size: 14px;
     line-height: 24px;
     color: rgba(255, 255, 255, 0.6);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+    &:hover,
+    &:focus {
+      color: var(--hover-txt-color);
   }
-  
-  .footer__email:hover,
-  .footer__phone:hover,
-  .footer__email:focus,
-  .footer__phone:focus {
-    color: var(--hover-txt-color);
-  }
+}
   
   .footer__logo:hover .footer__logo--acсent,
   .footer__logo:focus .footer__logo--acсent {
